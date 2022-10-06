@@ -1,0 +1,12 @@
+{
+	"name" : "Creatures' Hidden Potential",
+	"description" : "Mod adding various bonuses for creatures, to make use of their unused animations, with as slight impact to game's balance as possible",
+	"author" : "Andruids",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "0.4",
+	"modType" : "Creature",
+	"compatibility":
+	{
+		"min" : "1.0.0"
+	}
+}

@@ -1,0 +1,19 @@
+{
+	"name" : "Karmic Harpies",
+	"description" : "A mod allowing Harpy Hags to cast a lethal curse on one of their foes - the creatures they attack will have a chance to deal double damage on retaliation.",
+	"author" : "Andruids",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "1.0",
+	"modType" : "Creature",	
+
+	"creatures" :
+	[
+		"config/karmicHarpies.json"
+	],
+	"spells" :
+	[
+		"config/karmaCurse.json",
+		"config/karmaImpact.json"
+	]
+
+}

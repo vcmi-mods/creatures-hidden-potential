@@ -1,0 +1,15 @@
+{
+	"name" : "Furious Cyclopes",
+	"description" : "A mod changing the way Cyclopes behave when they get blinded (they're not happy).",
+	"author" : "Andruids",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "1.0",
+	"modType" : "Creature",	
+
+	"spells" :
+	[
+		"config/cyclopsFury.json",
+		"config/cyclopsBlind.json"
+	]
+
+}

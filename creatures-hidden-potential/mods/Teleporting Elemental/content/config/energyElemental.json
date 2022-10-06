@@ -1,0 +1,26 @@
+{
+	"core:energyElemental" :
+	{
+		"abilities" :
+		{
+			"teleports" :
+			{
+				"type": "FLYING",
+				"subtype": 1
+			}		
+		},
+		"graphics" :
+		{
+			"animationTime" :
+			{
+				"idle" : 10
+			},
+			"animation": "teleportingEnergy.DEF"
+		},
+		"sound" :
+		{
+			"startMoving": "ENTELEPORT1.wav",
+			"endMoving": "ENTELEPORT2.wav"
+		}				
+	}
+}

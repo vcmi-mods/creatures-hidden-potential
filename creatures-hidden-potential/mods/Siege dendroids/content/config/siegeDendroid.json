@@ -1,0 +1,78 @@
+{
+	"core:dendroidSoldier" :
+	{
+		"abilities" :
+		{
+			"catapultStop" : {
+				"val" : 0,
+				"type" : "ENCHANTED",
+				"subtype" : "spell.siegeBind",
+				"limiters": [
+					[
+						"allOf",
+						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendroNot"]}],
+					
+					[
+						"noneOf",
+						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}]
+				]	
+		
+			},
+			"catapultStopActivation" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"effectRange" : "ONLY_ENEMY_ARMY",
+				"val" : 100,
+				"subtype" : "spell.siegeBind"
+		
+			}
+			
+		}
+		
+	},
+
+
+	
+	"core:catapult" :
+	{
+		"abilities" :
+		{
+
+			
+			"defendingDendroidBlock" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"effectRange" : "ONLY_ENEMY_ARMY",
+				"propagator" : "BATTLE_WIDE",
+				"val" : 100,
+				"subtype" : "spell.siegeDendroNot"
+		
+			},
+			
+			"attackingDendroidBlock" : {
+				"type" : "MORE_DAMAGE_FROM_SPELL",
+				"propagator" : "HERO",
+				"val" : 100,
+				"subtype" : "spell.siegeDendro"
+		
+			},
+
+			"catapultStop" : {
+				"type" : "NOT_ACTIVE",
+				"limiters": [
+					[
+						"allOf",
+						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeBind"]}],
+					
+					[
+						"noneOf",
+						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult"]}]
+				]	
+
+			}				
+		}
+		
+	}
+}

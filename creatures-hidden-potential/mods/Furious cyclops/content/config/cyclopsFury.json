@@ -1,0 +1,84 @@
+{
+	"cyclopsFury" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "Cyclops Fury",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 3,
+		"defaultGainChance": 0, 		
+		"gainChance": {},
+		"counters": {},		
+		"graphics":
+		{
+			"iconImmune":"spells/cyclopsFuryImmune",
+			"iconEffect": "spells/cyclopsFuryEffect"
+ 
+		},		
+		"animation":
+		{
+		//	"affect":["C08SPF0"]
+		},
+		"sounds": {
+		//	"cast": "FRENZY"
+		},
+		
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "Cyclopes randomly attack with 2-hex beam.",
+				"cost": 0,
+				"power": 0,
+				"aiValue": 0,
+				"range" : "X",
+				"targetModifier":{"smart":false},
+				"battleEffects" : {
+					"cyclopsFury" : {
+						"type" : "core:timed",
+						"cumulative": false,
+						"bonus":
+						{
+							"cyclopsBeam":
+						{
+						"type" : "TWO_HEX_ATTACK_BREATH"
+						},
+							"cyclopeanMight" : {
+						"type" : "NO_MELEE_PENALTY"
+						},
+						
+						"necessaryLimiter" : {
+							"type" : "MORE_DAMAGE_FROM_SPELL",
+							"val" : 100,
+							"subtype" : "spell.cyclopsFury"
+						}
+					}
+				}
+				}
+					},
+					
+					"none":
+					{	 
+					},
+					"basic":
+					{	 
+					},
+					"advanced":
+					{	 
+					},
+					"expert":
+					{
+					}	
+		},
+		"targetCondition" : {
+			"allOf" : {
+				"core:creature.cyclopKing":"absolute"
+		}
+	},		
+		"flags" : {
+			"indifferent": true
+		}
+	}
+}

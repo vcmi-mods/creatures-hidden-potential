@@ -1,0 +1,18 @@
+{
+	"name" : "Siege Dendroids",
+	"description" : "A mod adding enchanting ability to Dendroid Soldiers. Using powerful roots of Rampart woods, they'll bind enemy Catapult for the first turn.",
+	"author" : "Andruids",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "1.0",
+	"modType" : "Creature",	
+
+	"creatures" :
+	[
+		"config/siegeDendroid.json"
+	],
+	"spells" :
+	[
+		"config/siegeBind.json"
+	]
+
+}

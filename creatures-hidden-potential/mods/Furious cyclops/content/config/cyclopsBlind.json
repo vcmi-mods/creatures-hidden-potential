@@ -1,0 +1,59 @@
+{
+	"core:blind" :
+	{	
+	"levels" : {
+		"base":{
+			"effects" : {
+				"notActive" : {
+					"limiters" : [
+						"noneOf",
+						{
+							"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "cyclop", true ]
+						}
+					]					
+				},
+				"attacksNearestCreature" : {
+					"type" : "ATTACKS_NEAREST_CREATURE",
+					"duration" : [
+						"UNTIL_BEING_ATTACKED",
+						"N_TURNS",
+						"STACK_GETS_TURN"
+					],
+					"limiters" : [
+						{
+							"type":"CREATURE_TYPE_LIMITER",
+							"parameters": [ "cyclop", true ]
+						}
+					]					
+				},
+				"cyclopsBeamTemp":
+			{
+			"type" : "TWO_HEX_ATTACK_BREATH",
+			"limiters": [
+				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
+						]						
+			},
+				"cyclopeanMightTemp" : {
+			"type" : "NO_MELEE_PENALTY",
+			"limiters": [
+				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
+						]						
+			},
+
+				"cyclopsFury" : {
+					"type" : "ENCHANTED",	
+					"val" : 1,					
+					"subtype" : "spell.cyclopsFury",
+					"limiters": [
+						[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+						[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
+								]				
+				}			
+			}
+		}
+		}
+	}
+}

@@ -1,0 +1,64 @@
+{
+	"core:minotaurKing" :
+	{
+
+		"sound" :
+		{		
+		"shoot": "MINKSHOT.wav"
+		},
+
+		"abilities" :
+		{
+			"rageSpeed" :
+			{
+				"type": "STACKS_SPEED",
+				"val" : 999,				
+				"limiters": [ 
+					["anyOf",
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+				 },		
+			"enraged" :
+			{
+				"type": "ENCHANTER",
+				"subtype": "spell.minosRage",
+				"val" : 2,
+				"addInfo" : 0,				
+				"limiters": [[ 
+					"anyOf",
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+				 },					 	 
+			"castsCount" :
+			{
+				"type" : "CASTS",
+				"val" : 1,			
+				"limiters": [[ 
+					"anyOf",
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
+				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
+				
+				[
+					"noneOf",
+					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+				]
+					 ]
+			}		
+		}
+	}
+}

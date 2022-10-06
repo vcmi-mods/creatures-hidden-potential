@@ -1,0 +1,64 @@
+{
+	"core:centaur" :
+	{
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"NoMeleePenalty" : 
+			{ 
+				"type" : "NO_MELEE_PENALTY" 
+			}
+		},
+		"graphics" : {
+            "missile" :
+			{
+				"projectile" : "battle/projectile/centshot.def",
+				"attackClimaxFrame" : 3,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		}
+	},
+	"core:centaurCaptain" :
+	{
+		"abilities" :
+		{
+			"canShoot" :
+			{
+				"type" : "SHOOTER"
+			},
+			"NoMeleePenalty" : 
+			{ 
+				"type" : "NO_MELEE_PENALTY" 
+			}
+		},
+		"graphics" : {
+            "missile" :
+			{
+				"projectile" : "battle/projectile/ccentshot.def",
+				"attackClimaxFrame" : 3,
+				"offset" :
+				{
+					"upperX" : 38,
+					"upperY" : -65,
+					"middleX" : 36,
+					"middleY" : -59,
+					"lowerX" : 21,
+					"lowerY" : -50
+				},
+				"frameAngles" : [90, 72, 45, 27, 0, -27, -45, -72, -90, 0, 0, 0]
+			}
+		}
+	}
+}

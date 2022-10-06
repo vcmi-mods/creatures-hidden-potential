@@ -1,0 +1,14 @@
+{
+	"name" : "Teleporting Elementals",
+	"description" : "A mod that changes Energy Elementals movement to teleport.",
+	"author" : "Andruids",
+	"contact" : "madaosoul@gmail.com",
+	"version" : "1.0",
+	"modType" : "Creature",	
+
+	"creatures" :
+	[
+		"config/energyElemental.json"
+	]
+
+}

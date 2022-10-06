@@ -1,0 +1,12 @@
+{
+	"core:cyclopKing" :
+	{
+		"abilities" :
+		{
+			"furious" :
+			{
+				"type": "TWO_HEX_ATTACK_BREATH"
+				 }
+		}
+	}
+}

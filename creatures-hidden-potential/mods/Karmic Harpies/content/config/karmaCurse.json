@@ -1,0 +1,65 @@
+{
+	"karmaCurse" : 
+	{
+		"type": "ability",
+		
+		"targetType" : "CREATURE",
+		"name" : "Karma Curse",
+		"school": {"air":false, "earth":false, "fire":false, "water":false},
+		"level": 1,
+		"power": 3,
+		"defaultGainChance": 0, 		
+		"gainChance":
+		{
+			
+		},
+		"counters": {},		
+		"graphics":
+		{
+			"iconImmune":"spells/karmaCurseImmune.bmp",
+			"iconEffect": "spells/karmaCurseEffect.bmp"
+		},		
+		"animation":
+		{
+			"affect":["C04SPE0"]
+		},
+		"sounds": {
+			"cast": "BADLUCK"
+		},
+		
+		"levels" : 
+			{
+			
+			"base":{
+				"description": "The attacking unit will have a chance to deal double damage on retaliation.",
+				"cost": 0,
+				"power": 3,
+				"aiValue": 0,
+				"range" : "0",
+				"targetModifier":{"smart":false},
+				"effects" : {
+					"canCastPrayer" : {
+						"val" : 100,
+						"type" : "SPELL_AFTER_ATTACK",
+						"subtype" : "spell.karmaImpact",
+						"duration" : "PERMANENT"
+					}
+					}
+					},
+					
+					"none":
+					{},
+					"basic":
+					{},
+					"advanced":
+					{},
+					"expert":
+					{}	
+		},
+		"targetCondition" : {
+	},		
+		"flags" : {
+			"negative": true
+		}
+	}
+}
