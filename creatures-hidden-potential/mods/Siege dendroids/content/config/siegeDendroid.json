@@ -22,7 +22,9 @@
 			},
 			"catapultStopActivation" : {
 				"type" : "MORE_DAMAGE_FROM_SPELL",
-				"effectRange" : "ONLY_ENEMY_ARMY",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ],
 				"val" : 100,
 				"subtype" : "spell.siegeBind"
 		
@@ -42,8 +44,9 @@
 			
 			"defendingDendroidBlock" : {
 				"type" : "MORE_DAMAGE_FROM_SPELL",
-				"effectRange" : "ONLY_ENEMY_ARMY",
-				"propagator" : "BATTLE_WIDE",
+				"propagator": "BATTLE_WIDE",
+				"propagationUpdater" : "BONUS_OWNER_UPDATER",
+				"limiters" : [ "OPPOSITE_SIDE" ],
 				"val" : 100,
 				"subtype" : "spell.siegeDendroNot"
 		
