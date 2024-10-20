@@ -13,6 +13,10 @@
 	"spells" :
 	[
 		"config/minosRage.json"
-	]
+	],
+	"czech" : {
+		"name" : "Rozzuření Minotauři",
+		"description" : "Mod přidávající Králům minotaurů schopnost sesílat kouzlo Zběsilost na začátku bitvy, ale pouze pokud nemají žádnou morálku."
+	}
 
 }

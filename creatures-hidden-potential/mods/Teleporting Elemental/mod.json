@@ -9,6 +9,10 @@
 	"creatures" :
 	[
 		"config/energyElemental.json"
-	]
+	],
+	"czech" : {
+		"name" : "Teleportující Elementálové",
+		"description" : "Mod, který mění pohyb Energetických Elementálů na teleportaci."
+	}
 
 }
