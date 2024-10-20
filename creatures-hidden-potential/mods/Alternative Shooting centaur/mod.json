@@ -9,6 +9,10 @@
 	"creatures" :
 	[
 		"config/centaur.json"
-	]
+	],
+	"czech" : {
+		"name" : "Alternativní střelečtí Kentauři",
+		"description" : "Mod přidávající Kentaurům schopnost střílet, ale bez šípů. Potřebují vozík se střelivem, aby mohli střílet."
+	}
 
 }

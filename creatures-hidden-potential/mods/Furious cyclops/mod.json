@@ -10,6 +10,10 @@
 	[
 		"config/cyclopsFury.json",
 		"config/cyclopsBlind.json"
-	]
+	],
+	"czech" : {
+		"name" : "Zuřiví Kyklopové",
+		"description" : "Mod měnící chování Kyklopů, když jsou oslepeni (nejsou z toho nadšení)."
+	}
 
 }

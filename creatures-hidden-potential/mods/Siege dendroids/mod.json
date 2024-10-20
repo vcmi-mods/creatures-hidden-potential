@@ -13,6 +13,10 @@
 	"spells" :
 	[
 		"config/siegeBind.json"
-	]
+	],
+	"czech" : {
+		"name" : "Obléhací Stromoví vojáci",
+		"description" : "Mod přidávající kouzelnou schopnost Stromovým vojákům. Pomocí mocných kořenů lesů bašty zadrží nepřátelský katapult v prvním tahu."
+	}
 
 }

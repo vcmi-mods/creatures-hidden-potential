@@ -14,6 +14,10 @@
 	[
 		"config/karmaCurse.json",
 		"config/karmaImpact.json"
-	]
+	],
+	"czech" : {
+		"name" : "Karmické Harpyje",
+		"description" : "Mod umožňující Starým harpyjím seslat smrtící kletbu na jednoho ze svých nepřátel – tvorové, které napadnou, budou mít šanci způsobit dvojnásobné poškození při odvetě."
+	}
 
 }
