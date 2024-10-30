@@ -15,7 +15,6 @@
 				"val" : 999,				
 				"limiters": [ 
 					["anyOf",
-				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
 				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
 				
 				[
@@ -33,7 +32,6 @@
 				"addInfo" : 0,				
 				"limiters": [[ 
 					"anyOf",
-				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
 				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
 				
 				[
@@ -49,7 +47,6 @@
 				"val" : 1,			
 				"limiters": [[ 
 					"anyOf",
-				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "BLOCK_MORALE" ]	 },
 				{	"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters": [ "NO_MORALE" ]		 }],
 				
 				[
