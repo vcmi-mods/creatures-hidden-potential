@@ -10,6 +10,10 @@
 	[
 		"config/energyElemental.json"
 	],
+	"softDepends" :
+    [
+        "wake-of-gods.stackexperience"
+    ],
 	"czech" : {
 		"name" : "Teleportující Elementálové",
 		"description" : "Mod, který mění pohyb Energetických Elementálů na teleportaci."

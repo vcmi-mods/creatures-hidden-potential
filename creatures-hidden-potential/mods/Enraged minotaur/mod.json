@@ -14,9 +14,13 @@
 	[
 		"config/minosRage.json"
 	],
+	"softDepends" :
+    [
+        "wake-of-gods.stackexperience"
+    ],
 	"czech" : {
 		"name" : "Rozzuření Minotauři",
-		"description" : "Mod přidávající Králům minotaurů schopnost sesílat kouzlo Zběsilost na začátku bitvy, ale pouze pokud nemají žádnou morálku."
+		"description" : "Mod přidávající Králům minotaurů schopnost sesílat kouzlo Zuřivost na začátku bitvy, ale pouze pokud nemají žádnou morálku."
 	}
 
 }
