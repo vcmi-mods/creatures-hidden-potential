@@ -10,6 +10,10 @@
 	[
 		"config/centaur.json"
 	],
+	"softDepends" :
+    [
+        "wake-of-gods.stackexperience"
+    ],
 	"czech" : {
 		"name" : "Alternativní střelečtí Kentauři",
 		"description" : "Mod přidávající Kentaurům schopnost střílet, ale bez šípů. Potřebují vozík se střelivem, aby mohli střílet."
