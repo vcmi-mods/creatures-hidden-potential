@@ -3,14 +3,15 @@
 	"description" : "Mod adding various bonuses for creatures, to make use of their unused animations, with as slight impact to game's balance as possible",
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
-	"version" : "0.5.3",
+	"version" : "0.5.4",
 	"modType" : "Mechanics",
 	"compatibility":
 	{
-		"min" : "1.4.0"
+		"min" : "1.7.0"
 	},
 	"changelog" :
     {
+		"0.5.4"   : [ "Update to vcmi-1.7 format" ],
 		"0.5.3"   : [ "Added Wake of Gods soft-depency" ],
 		"0.5.2"   : [ "Czech translation by George King" ],
 		"0.5.1"   : [ "Update to vcmi-1.4 format" ],

@@ -34,7 +34,7 @@
 				"description": "{Siege Bind Ability}\r\n\r\nUsing Rampart's powerful roots, Dendroid Soldiers get ability to bind the Siege Machines for the first turn.",
 				"cost": 0,
 				"power": 3,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "X",
 				"targetModifier":{"smart":false},
 				"effects" : {
@@ -52,9 +52,9 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding"]},
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding", null]},
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}
 							]
 						]	
 					},		
@@ -74,9 +74,9 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding"]},
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding", null]},
 									{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}
+										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}
 							]
 						]	
 		
@@ -94,9 +94,9 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding"]},
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding", null]},
 									{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}
+										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}
 							]
 						]	
 					},				 	 
@@ -113,9 +113,9 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding"]},
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.noMoreBinding", null]},
 									{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}
+										"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}
 							]
 						]	
 					},
@@ -133,7 +133,7 @@
 					[
 						"noneOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult"]}
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult", null]}
 					]
 				]	
 
@@ -173,7 +173,7 @@
 			"base":{
 
 				"description": "{Siege Bind}\r\n\r\nDendroid Soldier can bind the siege machines only one time in a battle.",
-				"cost": 0, "power": 1, "aiValue": 0,
+				"cost": 0, "power": 1, // "aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
 				"effects" : {
@@ -193,7 +193,7 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult"]}
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult", null]}
 							]
 						]	
 					},
@@ -215,7 +215,7 @@
 							[
 								"noneOf",
 								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult"]}
+									"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult", null]}
 							]
 						]	
 					}
@@ -253,7 +253,7 @@
 			"base":{
 
 				"description": "{Catapult Unstop}\r\n\r\nThe catapult will move in the 2nd turn of combat.",
-				"cost": 0, "power": 1, "aiValue": 0,
+				"cost": 0, "power": 1, // "aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {
@@ -300,7 +300,7 @@
 			"base":{
 
 				"description": "{Placeholder Spell}\r\n\r\nAttacking Dendroid Soldier doesn't move first.",
-				"cost": 0, "power": 1, "aiValue": 0,
+				"cost": 0, "power": 1, // "aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {
@@ -334,7 +334,7 @@
 			"base":{
 
 				"description": "{Placeholder Spell}\r\n\r\nOnly defending Dendroid Soldier moves first.",
-				"cost": 0, "power": 1, "aiValue": 0,
+				"cost": 0, "power": 1, // "aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {

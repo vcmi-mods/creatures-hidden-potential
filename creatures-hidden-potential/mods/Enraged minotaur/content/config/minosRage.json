@@ -38,7 +38,7 @@
 				"description": "Deprived of their renowned morale, Minotaurs are filled with earth-shattering rage.",
 				"cost": 0,
 				"power": 3,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":true},
 				"effects" : {

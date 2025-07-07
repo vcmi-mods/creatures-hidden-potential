@@ -30,7 +30,7 @@
 				"description": "Has a chance to deal double damage upon retaliation.",
 				"cost": 0,
 				"power": 3,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "0",
 				"targetModifier":{"smart":false},
 				"effects" : {

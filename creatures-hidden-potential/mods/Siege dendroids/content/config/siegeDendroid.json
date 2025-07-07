@@ -11,12 +11,12 @@
 					[
 						"allOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendroNot"]}],
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendroNot", null]}],
 					
 					[
 						"noneOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro"]}]
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}]
 				]	
 		
 			},
@@ -66,12 +66,12 @@
 					[
 						"allOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeBind"]}],
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeBind", null]}],
 					
 					[
 						"noneOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult"]}]
+							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult", null]}]
 				]	
 
 			}				

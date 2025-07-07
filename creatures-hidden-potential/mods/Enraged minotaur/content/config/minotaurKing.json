@@ -20,7 +20,7 @@
 				[
 					"noneOf",
 					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage", null]}
 				]
 					 ]
 				 },		
@@ -37,7 +37,7 @@
 				[
 					"noneOf",
 					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage", null]}
 				]
 					 ]
 				 },					 	 
@@ -52,7 +52,7 @@
 				[
 					"noneOf",
 					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage"]}
+						"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.minosRage", null]}
 				]
 					 ]
 			}		

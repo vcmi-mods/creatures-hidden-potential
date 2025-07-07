@@ -32,7 +32,7 @@
 				"description": "Cyclopes randomly attack with 2-hex beam.",
 				"cost": 0,
 				"power": 0,
-				"aiValue": 0,
+//				"aiValue": 0,
 				"range" : "X",
 				"targetModifier":{"smart":false},
 				"battleEffects" : {

@@ -31,14 +31,14 @@
 			{
 			"type" : "TWO_HEX_ATTACK_BREATH",
 			"limiters": [
-				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury", null]	} ],
 				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
 						]						
 			},
 				"cyclopeanMightTemp" : {
 			"type" : "NO_MELEE_PENALTY",
 			"limiters": [
-				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+				[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury", null]	} ],
 				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
 						]						
 			},
@@ -48,7 +48,7 @@
 					"val" : 1,					
 					"subtype" : "spell.cyclopsFury",
 					"limiters": [
-						[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury"]	} ],
+						[ "noneOf", {"type" : "HAS_ANOTHER_BONUS_LIMITER", "parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.cyclopsFury", null]	} ],
 						[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "parameters" : [ "cyclopKing" ]	} ]
 								]				
 				}			
