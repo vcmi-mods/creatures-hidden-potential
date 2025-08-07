@@ -56,12 +56,12 @@
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.noMoreBinding"
+									"bonusSubtype" : "noMoreBinding"
 								},
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.siegeDendro"
+									"bonusSubtype" : "siegeDendro"
 								}
 							]
 						]
@@ -86,12 +86,12 @@
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.noMoreBinding"
+									"bonusSubtype" : "noMoreBinding"
 								},
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.siegeDendro"
+									"bonusSubtype" : "siegeDendro"
 								}
 							]
 						]
@@ -113,12 +113,12 @@
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.noMoreBinding"
+									"bonusSubtype" : "noMoreBinding"
 								},
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.siegeDendro"
+									"bonusSubtype" : "siegeDendro"
 								}
 							]
 						]
@@ -140,12 +140,12 @@
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.noMoreBinding"
+									"bonusSubtype" : "noMoreBinding"
 								},
 								{
 									"type" : "HAS_ANOTHER_BONUS_LIMITER",
 									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "spell.siegeDendro"
+									"bonusSubtype" : "siegeDendro"
 								}
 							]
 						]
