@@ -50,12 +50,14 @@
 					
 					"minosRageStop" : {
 						"type" : "MORE_DAMAGE_FROM_SPELL",
-						"subtype" : "spell.minosRage",
+						"subtype" : "minosRage",
 						"val" : 100,
 						"duration" : "ONE_BATTLE",
 						"limiters": [
 								{"type" : "CREATURE_TYPE_LIMITER", 
-									"parameters" : [ "minotaurKing", true]}
+									"creature" : "minotaurKing",
+									"includeUpgrades" : true
+								}
 						]	
 					}
 					}

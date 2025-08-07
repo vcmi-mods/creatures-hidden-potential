@@ -52,7 +52,7 @@
 						"necessaryLimiter" : {
 							"type" : "MORE_DAMAGE_FROM_SPELL",
 							"val" : 100,
-							"subtype" : "spell.cyclopsFury"
+							"subtype" : "cyclopsFury"
 						}
 					}
 				}

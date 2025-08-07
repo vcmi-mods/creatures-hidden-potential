@@ -6,7 +6,7 @@
 			"karma curse" :
 			{
 				"type": "SPELLCASTER",
-				"subtype": "spell.karmaCurse",
+				"subtype": "karmaCurse",
 				"val" : 1,
 				"addInfo" : 100
 				 },

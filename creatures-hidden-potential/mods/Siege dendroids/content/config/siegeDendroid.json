@@ -6,17 +6,17 @@
 			"catapultStop" : {
 				"val" : 0,
 				"type" : "ENCHANTED",
-				"subtype" : "spell.siegeBind",
+				"subtype" : "siegeBind",
 				"limiters": [
 					[
 						"allOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendroNot", null]}],
+							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "siegeDendroNot"}],
 					
 					[
 						"noneOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeDendro", null]}]
+							"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "siegeDendro" }]
 				]	
 		
 			},
@@ -26,7 +26,7 @@
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
 				"limiters" : [ "OPPOSITE_SIDE" ],
 				"val" : 100,
-				"subtype" : "spell.siegeBind"
+				"subtype" : "siegeBind"
 		
 			}
 			
@@ -48,7 +48,7 @@
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
 				"limiters" : [ "OPPOSITE_SIDE" ],
 				"val" : 100,
-				"subtype" : "spell.siegeDendroNot"
+				"subtype" : "siegeDendroNot"
 		
 			},
 			
@@ -56,7 +56,7 @@
 				"type" : "MORE_DAMAGE_FROM_SPELL",
 				"propagator" : "HERO",
 				"val" : 100,
-				"subtype" : "spell.siegeDendro"
+				"subtype" : "siegeDendro"
 		
 			},
 
@@ -66,12 +66,12 @@
 					[
 						"allOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.siegeBind", null]}],
+							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeBind"}],
 					
 					[
 						"noneOf",
 						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"parameters" : [ "MORE_DAMAGE_FROM_SPELL", "spell.stopCatapult", null]}]
+							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.stopCatapult"}]
 				]	
 
 			}				

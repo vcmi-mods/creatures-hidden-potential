@@ -41,7 +41,7 @@
 					"canCastPrayer" : {
 						"val" : 100,
 						"type" : "SPELL_AFTER_ATTACK",
-						"subtype" : "spell.karmaImpact",
+						"subtype" : "karmaImpact",
 						"duration" : "PERMANENT"
 					}
 					}
