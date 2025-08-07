@@ -1,73 +1,98 @@
 {
-	"core:blind" :
-	{	
-	"levels" : {
-		"base":{
-			"effects" : {
-				"notActive" : {
-					"limiters" : [
-						"noneOf",
-						{
-							"type":"CREATURE_TYPE_LIMITER",
-									"creature" : "cyclop",
-									"includeUpgrades" : true
-						}
-					]					
-				},
-				"attacksNearestCreature" : {
-					"type" : "ATTACKS_NEAREST_CREATURE",
-					"duration" : [
-						"UNTIL_BEING_ATTACKED",
-						"N_TURNS",
-						"STACK_GETS_TURN"
-					],
-					"limiters" : [
-						{
-							"type":"CREATURE_TYPE_LIMITER",
-									"creature" : "cyclop",
-									"includeUpgrades" : true
-						}
-					]					
-				},
-				"cyclopsBeamTemp":
-			{
-			"type" : "TWO_HEX_ATTACK_BREATH",
-			"limiters": [
-				[ "noneOf", 
-					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-					"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-					"bonusSubtype" : "cyclopsFury"	
-					} ],
-				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "creature" :  "cyclopKing" 	} ]
-						]						
-			},
-				"cyclopeanMightTemp" : {
-			"type" : "NO_MELEE_PENALTY",
-			"limiters": [
-				[ "noneOf", 
-					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-					"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-					"bonusSubtype" : "cyclopsFury"	
-					} ],
-				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "creature" :  "cyclopKing" 	} ]
-						]					
-			},
+	"core:blind" : {
+		"levels" : {
+			"base" : {
+				"effects" : {
+					"notActive" : {
+						"limiters" : [
+							"noneOf",
+							{
+								"type" : "CREATURE_TYPE_LIMITER",
+								"creature" : "cyclop",
+								"includeUpgrades" : true
+							}
+						]
+					},
+					"attacksNearestCreature" : {
+						"type" : "ATTACKS_NEAREST_CREATURE",
+						"duration" : [
+							"UNTIL_BEING_ATTACKED",
+							"N_TURNS",
+							"STACK_GETS_TURN"
+						],
+						"limiters" : [
+							{
+								"type" : "CREATURE_TYPE_LIMITER",
+								"creature" : "cyclop",
+								"includeUpgrades" : true
+							}
+						]
+					},
+					"cyclopsBeamTemp" : {
+						"type" : "TWO_HEX_ATTACK_BREATH",
+						"limiters" : [
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "cyclopsFury"
+								}
+							],
+							[
+								"allOf",
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "cyclopKing"
+								}
+							]
+						]
+					},
+					"cyclopeanMightTemp" : {
+						"type" : "NO_MELEE_PENALTY",
+						"limiters" : [
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "cyclopsFury"
+								}
+							],
+							[
+								"allOf",
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "cyclopKing"
+								}
+							]
+						]
+					},
 
-				"cyclopsFury" : {
-					"type" : "ENCHANTED",	
-					"val" : 1,					
-					"subtype" : "cyclopsFury",
-			"limiters": [
-				[ "noneOf", 
-					{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-					"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-					"bonusSubtype" : "cyclopsFury"	
-					} ],
-				[ "allOf", {"type" : "CREATURE_TYPE_LIMITER", "creature" :  "cyclopKing" 	} ]
-						]			
-				}			
+					"cyclopsFury" : {
+						"type" : "ENCHANTED",
+						"val" : 1,
+						"subtype" : "cyclopsFury",
+						"limiters" : [
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "cyclopsFury"
+								}
+							],
+							[
+								"allOf",
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "cyclopKing"
+								}
+							]
+						]
+					}
+				}
 			}
-		}
 		}
 	}
 }

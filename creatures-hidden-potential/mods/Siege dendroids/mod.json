@@ -4,23 +4,19 @@
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
 	"version" : "1.0",
-	"modType" : "Mechanics",	
+	"modType" : "Mechanics",
 
-	"creatures" :
-	[
+	"creatures" : [
 		"config/siegeDendroid.json"
 	],
-	"spells" :
-	[
+	"spells" : [
 		"config/siegeBind.json"
 	],
-	"softDepends" :
-    [
-        "wake-of-gods.stackexperience"
-    ],
+	"softDepends" : [
+		"wake-of-gods.stackexperience"
+	],
 	"czech" : {
 		"name" : "Obléhací Stromoví vojáci",
 		"description" : "Mod přidávající kouzelnou schopnost Stromovým vojákům. Pomocí mocných kořenů lesů bašty zadrží nepřátelský katapult v prvním tahu."
 	}
-
 }

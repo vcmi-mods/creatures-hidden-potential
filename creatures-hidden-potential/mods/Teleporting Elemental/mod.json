@@ -4,19 +4,16 @@
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
 	"version" : "1.0",
-	"modType" : "Mechanics",	
+	"modType" : "Mechanics",
 
-	"creatures" :
-	[
+	"creatures" : [
 		"config/energyElemental.json"
 	],
-	"softDepends" :
-    [
-        "wake-of-gods.stackexperience"
-    ],
+	"softDepends" : [
+		"wake-of-gods.stackexperience"
+	],
 	"czech" : {
 		"name" : "Teleportující Elementálové",
 		"description" : "Mod, který mění pohyb Energetických Elementálů na teleportaci."
 	}
-
 }

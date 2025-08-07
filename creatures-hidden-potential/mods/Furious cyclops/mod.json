@@ -4,20 +4,17 @@
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
 	"version" : "1.0",
-	"modType" : "Mechanics",	
+	"modType" : "Mechanics",
 
-	"spells" :
-	[
+	"spells" : [
 		"config/cyclopsFury.json",
 		"config/cyclopsBlind.json"
 	],
-	"softDepends" :
-    [
-        "wake-of-gods.stackexperience"
-    ],
+	"softDepends" : [
+		"wake-of-gods.stackexperience"
+	],
 	"czech" : {
 		"name" : "Zuřiví Kyklopové",
 		"description" : "Mod měnící chování Kyklopů, když jsou oslepeni (nejsou z toho nadšení)."
 	}
-
 }

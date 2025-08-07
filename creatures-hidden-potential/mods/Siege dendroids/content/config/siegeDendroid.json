@@ -1,81 +1,85 @@
 {
-	"core:dendroidSoldier" :
-	{
-		"abilities" :
-		{
+	"core:dendroidSoldier" : {
+		"abilities" : {
 			"catapultStop" : {
 				"val" : 0,
 				"type" : "ENCHANTED",
 				"subtype" : "siegeBind",
-				"limiters": [
+				"limiters" : [
 					[
 						"allOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "siegeDendroNot"}],
-					
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+							"bonusSubtype" : "siegeDendroNot"
+						}
+					],
+
 					[
 						"noneOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "siegeDendro" }]
-				]	
-		
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+							"bonusSubtype" : "siegeDendro"
+						}
+					]
+				]
 			},
 			"catapultStopActivation" : {
 				"type" : "MORE_DAMAGE_FROM_SPELL",
-				"propagator": "BATTLE_WIDE",
+				"propagator" : "BATTLE_WIDE",
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
-				"limiters" : [ "OPPOSITE_SIDE" ],
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
 				"val" : 100,
 				"subtype" : "siegeBind"
-		
 			}
-			
 		}
-		
 	},
 
-
-	
-	"core:catapult" :
-	{
-		"abilities" :
-		{
-
-			
+	"core:catapult" : {
+		"abilities" : {
 			"defendingDendroidBlock" : {
 				"type" : "MORE_DAMAGE_FROM_SPELL",
-				"propagator": "BATTLE_WIDE",
+				"propagator" : "BATTLE_WIDE",
 				"propagationUpdater" : "BONUS_OWNER_UPDATER",
-				"limiters" : [ "OPPOSITE_SIDE" ],
+				"limiters" : [
+					"OPPOSITE_SIDE"
+				],
 				"val" : 100,
 				"subtype" : "siegeDendroNot"
-		
 			},
-			
+
 			"attackingDendroidBlock" : {
 				"type" : "MORE_DAMAGE_FROM_SPELL",
 				"propagator" : "HERO",
 				"val" : 100,
 				"subtype" : "siegeDendro"
-		
 			},
 
 			"catapultStop" : {
 				"type" : "NOT_ACTIVE",
-				"limiters": [
+				"limiters" : [
 					[
 						"allOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeBind"}],
-					
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+							"bonusSubtype" : "spell.siegeBind"
+						}
+					],
+
 					[
 						"noneOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.stopCatapult"}]
-				]	
-
-			}				
+						{
+							"type" : "HAS_ANOTHER_BONUS_LIMITER",
+							"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+							"bonusSubtype" : "spell.stopCatapult"
+						}
+					]
+				]
+			}
 		}
-		
 	}
 }

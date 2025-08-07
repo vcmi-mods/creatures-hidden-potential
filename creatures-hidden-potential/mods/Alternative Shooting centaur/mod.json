@@ -4,19 +4,16 @@
 	"author" : "Andruids, projectile graphics from another centaur mod (Hobbit, avatar, Troggly)",
 	"contact" : "madaosoul@gmail.com",
 	"version" : "1.0",
-	"modType" : "Mechanics",	
+	"modType" : "Mechanics",
 
-	"creatures" :
-	[
+	"creatures" : [
 		"config/centaur.json"
 	],
-	"softDepends" :
-    [
-        "wake-of-gods.stackexperience"
-    ],
+	"softDepends" : [
+		"wake-of-gods.stackexperience"
+	],
 	"czech" : {
 		"name" : "Alternativní střelečtí Kentauři",
 		"description" : "Mod přidávající Kentaurům schopnost střílet, ale bez šípů. Potřebují vozík se střelivem, aby mohli střílet."
 	}
-
 }

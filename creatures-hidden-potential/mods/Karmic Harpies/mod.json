@@ -4,24 +4,20 @@
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
 	"version" : "1.0",
-	"modType" : "Mechanics",	
+	"modType" : "Mechanics",
 
-	"creatures" :
-	[
+	"creatures" : [
 		"config/karmicHarpies.json"
 	],
-	"spells" :
-	[
+	"spells" : [
 		"config/karmaCurse.json",
 		"config/karmaImpact.json"
 	],
-	"softDepends" :
-    [
-        "wake-of-gods.stackexperience"
-    ],
+	"softDepends" : [
+		"wake-of-gods.stackexperience"
+	],
 	"czech" : {
 		"name" : "Karmické Harpyje",
 		"description" : "Mod umožňující Starým harpyjím seslat smrtící kletbu na jednoho ze svých nepřátel – tvorové, které napadnou, budou mít šanci způsobit dvojnásobné poškození při odvetě."
 	}
-
 }

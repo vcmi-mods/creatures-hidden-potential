@@ -1,365 +1,477 @@
 {
-	"siegeBind" : 
-	{
-		"type": "ability",
-		
+	"siegeBind" : {
+		"type" : "ability",
+
 		"targetType" : "CREATURE",
 		"name" : "Siege Bind Ability",
-		"school": {"air":false, "earth":false, "fire":false, "water":false},
-		"level": 1,
-		"power": 3,
-		"defaultGainChance": 0, 		
-		"gainChance":
-		{
-			
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"counters": {},		
-		"graphics":
-		{
-			"iconImmune":"spells/siegeBindImmune",
-			"iconEffect": "spells/Si73Para" 
-		},		
-		"animation":
-		{
-			"affect":["SP02_"]
+		"level" : 1,
+		"power" : 3,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"counters" : {},
+		"graphics" : {
+			"iconImmune" : "spells/siegeBindImmune",
+			"iconEffect" : "spells/Si73Para"
 		},
-		"sounds": {
-			"cast": "BIND"
+		"animation" : {
+			"affect" : [
+				"SP02_"
+			]
 		},
-		
-		"levels" : 
-			{
-			
-			"base":{
-				"description": "{Siege Bind Ability}\r\n\r\nUsing Rampart's powerful roots, Dendroid Soldiers get ability to bind the Siege Machines for the first turn.",
-				"cost": 0,
-				"power": 3,
-//				"aiValue": 0,
+		"sounds" : {
+			"cast" : "BIND"
+		},
+
+		"levels" : {
+			"base" : {
+				"description" : "{Siege Bind Ability}\r\n\r\nUsing Rampart's powerful roots, Dendroid Soldiers get ability to bind the Siege Machines for the first turn.",
+				"cost" : 0,
+				"power" : 3,
+				//				"aiValue": 0,
 				"range" : "X",
-				"targetModifier":{"smart":false},
+				"targetModifier" : {
+					"smart" : false
+				},
 				"effects" : {
-		 	 
-					"firstCast" :
-					{
+					"firstCast" : {
 						"type" : "STACKS_SPEED",
 						"val" : 999,
-						"limiters": [
-							"allOf", 
+						"limiters" : [
+							"allOf",
 							[
-								{"type" : "CREATURE_TYPE_LIMITER", 
-									"creature" :  "dendroidSoldier", 
-									"includeUpgrades": true }
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "dendroidSoldier",
+									"includeUpgrades" : true
+								}
 							],
 							[
 								"noneOf",
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", 
-									"bonusSubtype" : "spell.noMoreBinding" },
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeDendro" }
-							]
-						]	
-					},		
-		
-					"bindSiegeEnchant" :
-					{
-						"type": "ENCHANTER",
-						"subtype": "noMoreBinding",
-						"val" : 1,
-						"addInfo" : 0,
-						"limiters": [
-							"allOf", 
-							[
-								{"type" : "CREATURE_TYPE_LIMITER", 
-									"creature" :  "dendroidSoldier", 
-									"includeUpgrades": true }
-							],
-							[
-								"noneOf",
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", 
-									"bonusSubtype" : "spell.noMoreBinding" },
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeDendro" }
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.noMoreBinding"
+								},
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.siegeDendro"
+								}
 							]
 						]
-		
-						 },				 	 
-					"castsCount" :
-					{
+					},
+
+					"bindSiegeEnchant" : {
+						"type" : "ENCHANTER",
+						"subtype" : "noMoreBinding",
+						"val" : 1,
+						"addInfo" : 0,
+						"limiters" : [
+							"allOf",
+							[
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "dendroidSoldier",
+									"includeUpgrades" : true
+								}
+							],
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.noMoreBinding"
+								},
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.siegeDendro"
+								}
+							]
+						]
+					},
+					"castsCount" : {
 						"type" : "CASTS",
 						"val" : 1,
-						"limiters": [
-							"allOf", 
+						"limiters" : [
+							"allOf",
 							[
-								{"type" : "CREATURE_TYPE_LIMITER", 
-									"creature" :  "dendroidSoldier", 
-									"includeUpgrades": true }
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "dendroidSoldier",
+									"includeUpgrades" : true
+								}
 							],
 							[
 								"noneOf",
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", 
-									"bonusSubtype" : "spell.noMoreBinding" },
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeDendro" }
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.noMoreBinding"
+								},
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.siegeDendro"
+								}
 							]
-						]	
-					},				 	 
-					"bindDuration" :
-					{
+						]
+					},
+					"bindDuration" : {
 						"type" : "CREATURE_ENCHANT_POWER",
 						"val" : 2,
-						"limiters": [
-							"allOf", 
+						"limiters" : [
+							"allOf",
 							[
-								{"type" : "CREATURE_TYPE_LIMITER", 
-									"creature" :  "dendroidSoldier", 
-									"includeUpgrades": true }
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "dendroidSoldier",
+									"includeUpgrades" : true
+								}
 							],
 							[
 								"noneOf",
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", 
-									"bonusSubtype" : "spell.noMoreBinding" },
-								{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "spell.siegeDendro" }
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.noMoreBinding"
+								},
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "spell.siegeDendro"
+								}
 							]
-						]	
+						]
 					},
-					
-			"catapultStop" : {
-				"type" : "NOT_ACTIVE",
-				"propagator" : "BATTLE_WIDE",
-				
-				"limiters": [
-					"allOf", 
-					[
-						{"type" : "CREATURE_TYPE_LIMITER", 
-							"creature" :  "catapult", 
-							"includeUpgrades" :true }
-					],
-					[
-						"noneOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "stopCatapult"}
-					]
-				]	
 
-			}		
+					"catapultStop" : {
+						"type" : "NOT_ACTIVE",
+						"propagator" : "BATTLE_WIDE",
 
-
-
+						"limiters" : [
+							"allOf",
+							[
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "catapult",
+									"includeUpgrades" : true
+								}
+							],
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "stopCatapult"
+								}
+							]
+						]
+					}
 				}
-					},
-					"none":{},"basic":{},"advanced":{},"expert":{}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
 		},
 		"targetCondition" : {
 			"anyOf" : {
-				"core:creature.dendroidSoldier":"absolute"
-		}
-	},		
+				"core:creature.dendroidSoldier" : "absolute"
+			}
+		},
 		"flags" : {
-			"positive": true
+			"positive" : true
 		}
 	},
 
-	
-	"noMoreBinding" : 
-	{
-		"type": "ability",	"targetType" : "CREATURE",
+	"noMoreBinding" : {
+		"type" : "ability",
+		"targetType" : "CREATURE",
 		"name" : "Siege Bind",
-		"school": {"air":false, "earth":false, "fire":false, "water":false},
-		"level": 1, "power": 1, "defaultGainChance": 0, 		
-		"gainChance":{},"counters": {},		
-		"graphics":	{
-		"iconEffect": "spells/aftreBinding"},		
-		"animation": {
-			"affect":["SP02_"]},
-		"sounds": {
-			"cast": "BIND"},
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 1,
+		"power" : 1,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"counters" : {},
+		"graphics" : {
+			"iconEffect" : "spells/aftreBinding"
+		},
+		"animation" : {
+			"affect" : [
+				"SP02_"
+			]
+		},
+		"sounds" : {
+			"cast" : "BIND"
+		},
 		"levels" : {
-			"base":{
-
-				"description": "{Siege Bind}\r\n\r\nDendroid Soldier can bind the siege machines only one time in a battle.",
-				"cost": 0, "power": 1, // "aiValue": 0,
+			"base" : {
+				"description" : "{Siege Bind}\r\n\r\nDendroid Soldier can bind the siege machines only one time in a battle.",
+				"cost" : 0,
+				"power" : 1, // "aiValue" : 0,
 				"range" : "0",
-				"targetModifier":{"smart":true},
+				"targetModifier" : {
+					"smart" : true
+				},
 				"effects" : {
-
 					"bindBlock" : {
 						"type" : "ENCHANTED",
 						"subtype" : "stopCatapult",
 						"val" : 100,
-						"duration" : ["ONE_BATTLE"],
-				
-				"limiters": [
-					"allOf", 
-					[
-						{"type" : "CREATURE_TYPE_LIMITER", 
-							"creature" :  "catapult", 
-							"includeUpgrades" :true }
-					],
-					[
-						"noneOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "stopCatapult"}
-					]
-				]
+						"duration" : [
+							"ONE_BATTLE"
+						],
+
+						"limiters" : [
+							"allOf",
+							[
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "catapult",
+									"includeUpgrades" : true
+								}
+							],
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "stopCatapult"
+								}
+							]
+						]
 					},
-					
 
 					"onlyOneCast" : {
 						"type" : "MORE_DAMAGE_FROM_SPELL",
 						"subtype" : "noMoreBinding",
 						"val" : 100,
 						"propagator" : "BATTLE_WIDE",
-						"duration" : ["ONE_BATTLE"],
-				
-				"limiters": [
-					"allOf", 
-					[
-						{"type" : "CREATURE_TYPE_LIMITER", 
-							"creature" :  "dendroidSoldier", 
-							"includeUpgrades" :true }
-					],
-					[
-						"noneOf",
-						{"type" : "HAS_ANOTHER_BONUS_LIMITER", 
-							"bonusType" :  "MORE_DAMAGE_FROM_SPELL", "bonusSubtype" : "stopCatapult"}
-					]
-				]
+						"duration" : [
+							"ONE_BATTLE"
+						],
+
+						"limiters" : [
+							"allOf",
+							[
+								{
+									"type" : "CREATURE_TYPE_LIMITER",
+									"creature" : "dendroidSoldier",
+									"includeUpgrades" : true
+								}
+							],
+							[
+								"noneOf",
+								{
+									"type" : "HAS_ANOTHER_BONUS_LIMITER",
+									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+									"bonusSubtype" : "stopCatapult"
+								}
+							]
+						]
 					}
-
 				}
-
-					},
-			"none":{},"basic":{},"advanced":{},"expert":{}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
 		},
-		"targetCondition" : {"allOf" : {
-			"core:creature.catapult":"absolute"
-
-		},"noneOf" : {},"anyOf" : {}
-		},		
+		"targetCondition" : {
+			"allOf" : {
+				"core:creature.catapult" : "absolute"
+			},
+			"noneOf" : {},
+			"anyOf" : {}
+		},
 		"flags" : {
-			"indifferent": true
+			"indifferent" : true
 		}
 	},
 
-	
-	"stopCatapult" : 
-	{
-		"type": "ability",	"targetType" : "CREATURE",
+	"stopCatapult" : {
+		"type" : "ability",
+		"targetType" : "CREATURE",
 		"name" : "Siege Bind",
-		"school": {"air":false, "earth":false, "fire":false, "water":false},
-		"level": 1, "power": 1, "defaultGainChance": 0, 		
-		"gainChance":{},"counters": {},		
-		"graphics":	{
-		"iconEffect": "spells/aftreBinding"},		
-		"animation":{
-			"affect":["C04SPW"]},
-		"sounds": {
-			"cast": "CURSE"},
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
+		},
+		"level" : 1,
+		"power" : 1,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"counters" : {},
+		"graphics" : {
+			"iconEffect" : "spells/aftreBinding"
+		},
+		"animation" : {
+			"affect" : [
+				"C04SPW"
+			]
+		},
+		"sounds" : {
+			"cast" : "CURSE"
+		},
 		"levels" : {
-			"base":{
-
-				"description": "{Catapult Unstop}\r\n\r\nThe catapult will move in the 2nd turn of combat.",
-				"cost": 0, "power": 1, // "aiValue": 0,
+			"base" : {
+				"description" : "{Catapult Unstop}\r\n\r\nThe catapult will move in the 2nd turn of combat.",
+				"cost" : 0,
+				"power" : 1, // "aiValue" : 0,
 				"range" : "0",
-				"targetModifier":{"smart":false},
+				"targetModifier" : {
+					"smart" : false
+				},
 				"effects" : {
-
 					"catapultIsStopped" : {
 						"type" : "MORE_DAMAGE_FROM_SPELL",
 						"val" : 100,
 						"subtype" : "stopCatapult",
-				
-						"limiters": [
-								{"type" : "CREATURE_TYPE_LIMITER", 
-									"creature" :  "catapult", 
-									"includeUpgrades" : true}
-						]	
+
+						"limiters" : [
+							{
+								"type" : "CREATURE_TYPE_LIMITER",
+								"creature" : "catapult",
+								"includeUpgrades" : true
+							}
+						]
 					}
-
 				}
-
-					},
-			"none":{},"basic":{},"advanced":{},"expert":{}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
 		},
-		"targetCondition" : {"allOf" : {},"noneOf" : {},"anyOf" : {
-			"core:creature.catapult":"absolute",
-			"core:creature.arrowTower":"absolute"}
-		},		
+		"targetCondition" : {
+			"allOf" : {},
+			"noneOf" : {},
+			"anyOf" : {
+				"core:creature.catapult" : "absolute",
+				"core:creature.arrowTower" : "absolute"
+			}
+		},
 		"flags" : {
-			"indifferent": true
+			"indifferent" : true
 		}
 	},
-	
-	"siegeDendro" : 
-	{
-		"type": "ability",	"targetType" : "CREATURE",
+
+	"siegeDendro" : {
+		"type" : "ability",
+		"targetType" : "CREATURE",
 		"name" : "Placeholder Spell",
-		"school": {"air":false, "earth":false, "fire":false, "water":false},
-		"level": 1, "power": 1, "defaultGainChance": 0, 		
-		"gainChance":{},"counters": {},		
-		"graphics":	{
-		"iconEffect": "spells/Si73Para"},		
-		"animation":{
-			"affect":["C04SPW"]},
-		"sounds": {
-			"cast": "CURSE"},
-		"levels" : {
-			"base":{
-
-				"description": "{Placeholder Spell}\r\n\r\nAttacking Dendroid Soldier doesn't move first.",
-				"cost": 0, "power": 1, // "aiValue": 0,
-				"range" : "0",
-				"targetModifier":{"smart":false},
-				"effects" : {
-
-				}
-
-					},
-			"none":{},"basic":{},"advanced":{},"expert":{}
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"targetCondition" : {"allOf" : {},"noneOf" : {},"anyOf" : {}
-		},		
+		"level" : 1,
+		"power" : 1,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"counters" : {},
+		"graphics" : {
+			"iconEffect" : "spells/Si73Para"
+		},
+		"animation" : {
+			"affect" : [
+				"C04SPW"
+			]
+		},
+		"sounds" : {
+			"cast" : "CURSE"
+		},
+		"levels" : {
+			"base" : {
+				"description" : "{Placeholder Spell}\r\n\r\nAttacking Dendroid Soldier doesn't move first.",
+				"cost" : 0,
+				"power" : 1, // "aiValue" : 0,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
+		},
+		"targetCondition" : {
+			"allOf" : {},
+			"noneOf" : {},
+			"anyOf" : {}
+		},
 		"flags" : {
-			"indifferent": true
+			"indifferent" : true
 		}
 	},
-	
-	"siegeDendroNot" : 
-	{
-		"type": "ability",	"targetType" : "CREATURE",
+
+	"siegeDendroNot" : {
+		"type" : "ability",
+		"targetType" : "CREATURE",
 		"name" : "Placeholder Spell",
-		"school": {"air":false, "earth":false, "fire":false, "water":false},
-		"level": 1, "power": 1, "defaultGainChance": 0, 		
-		"gainChance":{},"counters": {},		
-		"graphics":	{
-		"iconEffect": "spells/Si73Para"},		
-		"animation":{
-			"affect":["C04SPW"]},
-		"sounds": {
-			"cast": "CURSE"},
-		"levels" : {
-			"base":{
-
-				"description": "{Placeholder Spell}\r\n\r\nOnly defending Dendroid Soldier moves first.",
-				"cost": 0, "power": 1, // "aiValue": 0,
-				"range" : "0",
-				"targetModifier":{"smart":false},
-				"effects" : {
-
-				}
-
-					},
-			"none":{},"basic":{},"advanced":{},"expert":{}
+		"school" : {
+			"air" : false,
+			"earth" : false,
+			"fire" : false,
+			"water" : false
 		},
-		"targetCondition" : {"allOf" : {},"noneOf" : {},"anyOf" : {}
-		},		
+		"level" : 1,
+		"power" : 1,
+		"defaultGainChance" : 0,
+		"gainChance" : {},
+		"counters" : {},
+		"graphics" : {
+			"iconEffect" : "spells/Si73Para"
+		},
+		"animation" : {
+			"affect" : [
+				"C04SPW"
+			]
+		},
+		"sounds" : {
+			"cast" : "CURSE"
+		},
+		"levels" : {
+			"base" : {
+				"description" : "{Placeholder Spell}\r\n\r\nOnly defending Dendroid Soldier moves first.",
+				"cost" : 0,
+				"power" : 1, // "aiValue" : 0,
+				"range" : "0",
+				"targetModifier" : {
+					"smart" : false
+				},
+				"effects" : {}
+			},
+			"none" : {},
+			"basic" : {},
+			"advanced" : {},
+			"expert" : {}
+		},
+		"targetCondition" : {
+			"allOf" : {},
+			"noneOf" : {},
+			"anyOf" : {}
+		},
 		"flags" : {
-			"indifferent": true
+			"indifferent" : true
 		}
 	}
 }

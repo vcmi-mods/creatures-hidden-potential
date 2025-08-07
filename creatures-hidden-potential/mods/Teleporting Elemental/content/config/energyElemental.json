@@ -1,26 +1,20 @@
 {
-	"core:energyElemental" :
-	{
-		"abilities" :
-		{
-			"teleports" :
-			{
-				"type": "FLYING",
-				"subtype": "movementTeleporting"
-			}		
+	"core:energyElemental" : {
+		"abilities" : {
+			"teleports" : {
+				"type" : "FLYING",
+				"subtype" : "movementTeleporting"
+			}
 		},
-		"graphics" :
-		{
-			"animationTime" :
-			{
+		"graphics" : {
+			"animationTime" : {
 				"idle" : 10
 			},
-			"animation": "teleportingEnergy.DEF"
+			"animation" : "teleportingEnergy.DEF"
 		},
-		"sound" :
-		{
-			"startMoving": "ENTELEPORT1.wav",
-			"endMoving": "ENTELEPORT2.wav"
-		}				
+		"sound" : {
+			"startMoving" : "ENTELEPORT1.wav",
+			"endMoving" : "ENTELEPORT2.wav"
+		}
 	}
 }
