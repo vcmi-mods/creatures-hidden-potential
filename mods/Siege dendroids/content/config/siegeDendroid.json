@@ -3,8 +3,9 @@
 		"abilities" : {
 			"catapultStop" : {
 				"val" : 0,
-				"type" : "ENCHANTED",
-				"subtype" : "siegeBind",
+				"type" : "COMBAT_EVENT_TRIGGER",
+				"subtype" : "enchanted",
+				"addInfo" : { "spell" : "siegeBind" },
 				"limiters" : [
 					[
 						"allOf",

@@ -3,12 +3,15 @@
 	"description" : "Mod adding various bonuses for creatures, to make use of their unused animations, with as slight impact to game's balance as possible",
 	"author" : "Andruids",
 	"contact" : "madaosoul@gmail.com",
-	"version" : "0.5.5",
+	"version" : "0.5.6",
 	"modType" : "Mechanics",
 	"compatibility" : {
 		"min" : "1.7.0"
 	},
 	"changelog" : {
+		"0.5.6" : [
+			"Updated to VCMI 1.8 format"
+		],
 		"0.5.5" : [
 			"Another update to vcmi-1.7 format"
 		],
@@ -37,7 +40,7 @@
 		"name" : "Skrytý potenciál jednotek",
 		"description" : "Modifikace přidávající různé bonusy pro jednotky, aby využily své nevyužité animace, s co nejmenším dopadem na herní vyváženost",
 		"translations" : [
-			"translation/creatures-hidden-potential/czech.json"
+			"translation/czech.json"
 		]
 	}
 }
