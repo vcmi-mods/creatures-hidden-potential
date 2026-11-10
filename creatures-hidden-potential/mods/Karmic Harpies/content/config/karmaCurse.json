@@ -38,12 +38,17 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"effects" : {
-					"canCastPrayer" : {
-						"val" : 100,
-						"type" : "SPELL_AFTER_ATTACK",
-						"subtype" : "karmaImpact",
-						"duration" : "PERMANENT"
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"canCastPrayer" : {
+								"val" : 100,
+								"type" : "SPELL_AFTER_ATTACK",
+								"subtype" : "karmaImpact",
+								"duration" : "PERMANENT"
+							}
+						}
 					}
 				}
 			},

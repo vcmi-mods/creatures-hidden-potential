@@ -32,15 +32,20 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"effects" : {
-					"karmaRetaliation" : {
-						"val" : 50,
-						"type" : "DOUBLE_DAMAGE_CHANCE",
-						"duration" : [
-							"UNTIL_BEING_ATTACKED",
-							"UNTIL_ATTACK",
-							"STACK_GETS_TURN"
-						]
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"karmaRetaliation" : {
+								"val" : 50,
+								"type" : "DOUBLE_DAMAGE_CHANCE",
+								"duration" : [
+									"UNTIL_BEING_ATTACKED",
+									"UNTIL_ATTACK",
+									"STACK_GETS_TURN"
+								]
+							}
+						}
 					}
 				}
 			},

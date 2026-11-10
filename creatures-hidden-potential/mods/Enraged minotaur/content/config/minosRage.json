@@ -41,25 +41,30 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"minosRage" : {
-						"type" : "IN_FRENZY",
-						"val" : 100,
-						"duration" : "UNTIL_ATTACK"
-					},
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"minosRage" : {
+								"type" : "IN_FRENZY",
+								"val" : 100,
+								"duration" : "UNTIL_ATTACK"
+							},
 
-					"minosRageStop" : {
-						"type" : "MORE_DAMAGE_FROM_SPELL",
-						"subtype" : "minosRage",
-						"val" : 100,
-						"duration" : "ONE_BATTLE",
-						"limiters" : [
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "minotaurKing",
-								"includeUpgrades" : true
+							"minosRageStop" : {
+								"type" : "MORE_DAMAGE_FROM_SPELL",
+								"subtype" : "minosRage",
+								"val" : 100,
+								"duration" : "ONE_BATTLE",
+								"limiters" : [
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "minotaurKing",
+										"includeUpgrades" : true
+									}
+								]
 							}
-						]
+						}
 					}
 				}
 			},

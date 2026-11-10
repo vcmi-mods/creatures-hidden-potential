@@ -38,141 +38,146 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"effects" : {
-					"firstCast" : {
-						"type" : "STACKS_SPEED",
-						"val" : 999,
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "dendroidSoldier",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "noMoreBinding"
-								},
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "siegeDendro"
-								}
-							]
-						]
-					},
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"firstCast" : {
+								"type" : "STACKS_SPEED",
+								"val" : 999,
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "dendroidSoldier",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "noMoreBinding"
+										},
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "siegeDendro"
+										}
+									]
+								]
+							},
 
-					"bindSiegeEnchant" : {
-						"type" : "ENCHANTER",
-						"subtype" : "noMoreBinding",
-						"val" : 1,
-						"addInfo" : 0,
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "dendroidSoldier",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "noMoreBinding"
-								},
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "siegeDendro"
-								}
-							]
-						]
-					},
-					"castsCount" : {
-						"type" : "CASTS",
-						"val" : 1,
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "dendroidSoldier",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "noMoreBinding"
-								},
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "siegeDendro"
-								}
-							]
-						]
-					},
-					"bindDuration" : {
-						"type" : "CREATURE_ENCHANT_POWER",
-						"val" : 2,
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "dendroidSoldier",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "noMoreBinding"
-								},
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "siegeDendro"
-								}
-							]
-						]
-					},
+							"bindSiegeEnchant" : {
+								"type" : "ENCHANTER",
+								"subtype" : "noMoreBinding",
+								"val" : 1,
+								"addInfo" : 0,
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "dendroidSoldier",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "noMoreBinding"
+										},
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "siegeDendro"
+										}
+									]
+								]
+							},
+							"castsCount" : {
+								"type" : "CASTS",
+								"val" : 1,
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "dendroidSoldier",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "noMoreBinding"
+										},
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "siegeDendro"
+										}
+									]
+								]
+							},
+							"bindDuration" : {
+								"type" : "CREATURE_ENCHANT_POWER",
+								"val" : 2,
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "dendroidSoldier",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "noMoreBinding"
+										},
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "siegeDendro"
+										}
+									]
+								]
+							},
 
-					"catapultStop" : {
-						"type" : "NOT_ACTIVE",
-						"propagator" : "BATTLE_WIDE",
+							"catapultStop" : {
+								"type" : "NOT_ACTIVE",
+								"propagator" : "BATTLE_WIDE",
 
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "catapult",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "stopCatapult"
-								}
-							]
-						]
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "catapult",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "stopCatapult"
+										}
+									]
+								]
+							}
+						}
 					}
 				}
 			},
@@ -226,62 +231,68 @@
 				"targetModifier" : {
 					"smart" : true
 				},
-				"effects" : {
-					"bindBlock" : {
-						"type" : "ENCHANTED",
-						"subtype" : "stopCatapult",
-						"val" : 100,
-						"duration" : [
-							"ONE_BATTLE"
-						],
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"bindBlock" : {
+								"type" : "COMBAT_EVENT_TRIGGER",
+								"val" : 97,
+								"subtype" : "enchanted",
+								"addInfo" : { "spell" : "stopCatapult", "massive" : true },
+								"duration" : [
+									"ONE_BATTLE"
+								],
 
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "catapult",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "stopCatapult"
-								}
-							]
-						]
-					},
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "catapult",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "stopCatapult"
+										}
+									]
+								]
+							},
 
-					"onlyOneCast" : {
-						"type" : "MORE_DAMAGE_FROM_SPELL",
-						"subtype" : "noMoreBinding",
-						"val" : 100,
-						"propagator" : "BATTLE_WIDE",
-						"duration" : [
-							"ONE_BATTLE"
-						],
+							"onlyOneCast" : {
+								"type" : "MORE_DAMAGE_FROM_SPELL",
+								"subtype" : "noMoreBinding",
+								"val" : 100,
+								"propagator" : "BATTLE_WIDE",
+								"duration" : [
+									"ONE_BATTLE"
+								],
 
-						"limiters" : [
-							"allOf",
-							[
-								{
-									"type" : "CREATURE_TYPE_LIMITER",
-									"creature" : "dendroidSoldier",
-									"includeUpgrades" : true
-								}
-							],
-							[
-								"noneOf",
-								{
-									"type" : "HAS_ANOTHER_BONUS_LIMITER",
-									"bonusType" : "MORE_DAMAGE_FROM_SPELL",
-									"bonusSubtype" : "stopCatapult"
-								}
-							]
-						]
+								"limiters" : [
+									"allOf",
+									[
+										{
+											"type" : "CREATURE_TYPE_LIMITER",
+											"creature" : "dendroidSoldier",
+											"includeUpgrades" : true
+										}
+									],
+									[
+										"noneOf",
+										{
+											"type" : "HAS_ANOTHER_BONUS_LIMITER",
+											"bonusType" : "MORE_DAMAGE_FROM_SPELL",
+											"bonusSubtype" : "stopCatapult"
+										}
+									]
+								]
+							}
+						}
 					}
 				}
 			},
@@ -337,19 +348,24 @@
 				"targetModifier" : {
 					"smart" : false
 				},
-				"effects" : {
-					"catapultIsStopped" : {
-						"type" : "MORE_DAMAGE_FROM_SPELL",
-						"val" : 100,
-						"subtype" : "stopCatapult",
+				"battleEffects" : {
+					"timed" : {
+						"type" : "core:timed",
+						"bonus" : {
+							"catapultIsStopped" : {
+								"type" : "MORE_DAMAGE_FROM_SPELL",
+								"val" : 100,
+								"subtype" : "stopCatapult",
 
-						"limiters" : [
-							{
-								"type" : "CREATURE_TYPE_LIMITER",
-								"creature" : "catapult",
-								"includeUpgrades" : true
+								"limiters" : [
+									{
+										"type" : "CREATURE_TYPE_LIMITER",
+										"creature" : "catapult",
+										"includeUpgrades" : true
+									}
+								]
 							}
-						]
+						}
 					}
 				}
 			},
@@ -405,8 +421,7 @@
 				"range" : "0",
 				"targetModifier" : {
 					"smart" : false
-				},
-				"effects" : {}
+				}
 			},
 			"none" : {},
 			"basic" : {},
@@ -457,8 +472,7 @@
 				"range" : "0",
 				"targetModifier" : {
 					"smart" : false
-				},
-				"effects" : {}
+				}
 			},
 			"none" : {},
 			"basic" : {},
