@@ -37,7 +37,7 @@
 		"name" : "Skrytý potenciál jednotek",
 		"description" : "Modifikace přidávající různé bonusy pro jednotky, aby využily své nevyužité animace, s co nejmenším dopadem na herní vyváženost",
 		"translations" : [
-			"translation/creatures-hidden-potential/czech.json"
+			"translation/czech.json"
 		]
 	}
 }
