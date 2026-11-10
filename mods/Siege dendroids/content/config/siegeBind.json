@@ -239,7 +239,10 @@
 								"type" : "COMBAT_EVENT_TRIGGER",
 								"val" : 97,
 								"subtype" : "enchanted",
-								"addInfo" : { "spell" : "stopCatapult", "massive" : true },
+								"addInfo" : {
+									"spell" : "stopCatapult",
+									"massive" : true
+								},
 								"duration" : [
 									"ONE_BATTLE"
 								],

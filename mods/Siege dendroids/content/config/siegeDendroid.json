@@ -5,7 +5,9 @@
 				"val" : 0,
 				"type" : "COMBAT_EVENT_TRIGGER",
 				"subtype" : "enchanted",
-				"addInfo" : { "spell" : "siegeBind" },
+				"addInfo" : {
+					"spell" : "siegeBind"
+				},
 				"limiters" : [
 					[
 						"allOf",

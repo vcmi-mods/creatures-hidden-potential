@@ -74,7 +74,9 @@
 							"cyclopsFury" : {
 								"type" : "COMBAT_EVENT_TRIGGER",
 								"subtype" : "enchanted",
-								"addInfo" : { "spell" : "cyclopsFury" },
+								"addInfo" : {
+									"spell" : "cyclopsFury"
+								},
 								"val" : 1,
 								"limiters" : [
 									[
